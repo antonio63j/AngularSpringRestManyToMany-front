@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full',
-  }, {
+  },
+  {
     path: '',
     component: AdminLayoutComponent,
     children: [
@@ -18,7 +19,9 @@ const routes: Routes = [
         path: '',
         loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
       }]
-  }
+  },
+  {path: 'empleados', loadChildren: './empleados/empleados.module#EmpleadosModule'},
+  {path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 
 @NgModule({
