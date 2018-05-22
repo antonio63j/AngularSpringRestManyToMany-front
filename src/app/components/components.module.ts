@@ -15,7 +15,7 @@ import { MenuComponent } from './primeng-panelmenu/menu/menu.component';
     CommonModule,
     RouterModule,
     PanelMenuModule
-    
+
   ],
   declarations: [
     FooterComponent,

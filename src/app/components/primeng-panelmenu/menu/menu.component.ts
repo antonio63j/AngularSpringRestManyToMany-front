@@ -22,6 +22,8 @@ export class MenuComponent implements OnInit {
                     {
                     label: 'Gestión',
                     icon: 'fa-plus',
+                    routerLink: ['empleados'],
+                    // routerLinkActiveOptions: {exact: true}
                     },
                    { label: 'Consulta movimientos',
                      icon: 'fa-table'
